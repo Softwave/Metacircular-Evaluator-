@@ -74,9 +74,8 @@ function draw() {
 
   // Udpate Music
   (x = mouseX / windowWidth), (y = mouseY / windowHeight);
-  bass.resonance = (1 - x) * 8;
+  bass.resonance = (1 - x) * 5;
   bass.cutoff = (1 - y) / 2;
-
   // Timers
   if (frameCount % 60 == 0 && timer < 120) {
     timer++;
