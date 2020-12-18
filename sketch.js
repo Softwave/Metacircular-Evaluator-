@@ -36,7 +36,7 @@ function draw() {
       0,
       0,
       cSize + 30 * i + value * rad,
-      i * cNum + rad,
+      i * cSize + rad,
       angle * i,
       360 - i / 2
     );
