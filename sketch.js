@@ -10,7 +10,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   drums = EDrums("x*o*x*o-");
-  bass = Mono("bass").note.seq([0, 7], 1 / 16);
+  bass = Mono("bass"); //.note.seq([0, 7], 1 / 8);
 
   Gibber.scale.root.seq(["d4", "f4", "g4", "a4", "d4", "f4", "c4", "d4"], 1);
 
@@ -81,9 +81,7 @@ function draw() {
   if (frameCount % 60 == 0 && timer < 120) {
     timer++;
   }
-  //if (timer < 60) {
-  //  bass.note.seq([0, 7], 1 / 4);
-  //}
+  bass.note.seq([0, 7], 1 / 4);
   //if (timer < 90 && timer > 60) {
   //  bass.note.seq([0, 7], 1 / 8);
   //}
